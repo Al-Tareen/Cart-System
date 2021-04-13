@@ -23,7 +23,7 @@ class Product:
 		return (float(Product._calculateSubtotal(cart)) * 0.0825) #Tax rate = 8.25%
 
 	def getTotal(cart):
-		return (Product._calculateTax(cart) + Product._calculateSubtotal(cart)) #Would have like to used math module to round-down to 10 decimal place to meet your final answer, but not sure if acceptable. 
+		return (Product._calculateTax(cart) + Product._calculateSubtotal(cart))
 
 	def getReceiptData(cart):
 		return Product._calculateSubtotal(cart), Product._calculateTax(cart)
